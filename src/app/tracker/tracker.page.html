@@ -17,10 +17,10 @@
       <ion-list-header>Track a task</ion-list-header>  
 
       <ion-item>
-        <ion-input name="taskName" placeholder="enetr name of task" type="text" formControlName="name"></ion-input>
+        <ion-input name="taskName" placeholder="enter name of task" type="text" formControlName="name"></ion-input>
       </ion-item>
 
-      <ion-button expand="full" color="tertiary"  *ngIf="!started"  (click)="start()" [disabled]="!taskForm.valid" >Start</ion-button>
+      <ion-button expand="full" color="tertiary"  *ngIf="!started"  (click)="start()" [disabled]="!taskForm.valid" >start</ion-button>
       <ion-button expand="full" color="secondary" *ngIf="started"   (click)="stop()" >Stop</ion-button>
 
       <ion-item *ngIf="started" > {{time}} seconds </ion-item>
